@@ -13,6 +13,7 @@ export default function Home() {
         <FeaturesSection />
         <PricingSection />
       </main>
+
       <Footer />
     </div>
   );

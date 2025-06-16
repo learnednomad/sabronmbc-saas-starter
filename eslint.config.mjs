@@ -12,11 +12,12 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.config({
     extends: ["next/core-web-vitals", "next/typescript", "prettier"],
-    plugins: ["check-file"],
+    plugins: ["check-file", "node"],
 
     rules: {
       "prefer-arrow-callback": "error",
       "prefer-template": "error",
+      "node/no-process-env": "error",
       semi: ["error"],
       quotes: ["error", "double"],
       "check-file/filename-naming-convention": [
