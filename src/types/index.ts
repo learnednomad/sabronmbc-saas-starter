@@ -94,20 +94,20 @@ export interface ModalProps {
   children: React.ReactNode;
 }
 
-export interface TableColumn<T> {
-  key: keyof T | string;
-  label: string;
-  sortable?: boolean;
-  render?: (value: any, record: T) => React.ReactNode;
-}
+// export interface TableColumn<T> {
+//   key: keyof T | string;
+//   label: string;
+//   sortable?: boolean;
+//   render?: (value: any, record: T) => React.ReactNode;
+// }
 
 export interface SortConfig {
   field: string;
   direction: "asc" | "desc";
 }
 
-export interface FilterConfig {
-  field: string;
-  value: any;
-  operator?: "eq" | "contains" | "gt" | "lt" | "gte" | "lte";
-}
+// export interface FilterConfig {
+//   field: string;
+//   value: any;
+//   operator?: "eq" | "contains" | "gt" | "lt" | "gte" | "lte";
+// }
