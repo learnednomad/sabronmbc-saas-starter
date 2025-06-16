@@ -54,7 +54,7 @@ export interface Invoice {
   downloadUrl?: string;
 }
 
-export interface ApiResponse<T = any> {
+export interface ApiResponse<T> {
   data: T;
   message?: string;
   success: boolean;
