@@ -33,16 +33,16 @@ export function truncate(text: string, length: number) {
   return `${text.slice(0, length)}...`;
 }
 
-export function debounce<T extends (...args: any[]) => any>(
-  func: T,
-  wait: number
-): (...args: Parameters<T>) => void {
-  let timeout: NodeJS.Timeout;
-  return (...args: Parameters<T>) => {
-    clearTimeout(timeout);
-    timeout = setTimeout(() => func(...args), wait);
-  };
-}
+// export function debounce<T extends (...args: any[]) => any>(
+//   func: T,
+//   wait: number
+// ): (...args: Parameters<T>) => void {
+//   let timeout: NodeJS.Timeout;
+//   return (...args: Parameters<T>) => {
+//     clearTimeout(timeout);
+//     timeout = setTimeout(() => func(...args), wait);
+//   };
+// }
 
 export function generateId() {
   return Math.random().toString(36).substr(2, 9);
